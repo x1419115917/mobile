@@ -1,0 +1,113 @@
+@mixin flex-fix(){
+  -ms-flex: 1 1 0.000000001px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-flex-basis: 0.000000001px;
+  flex-basis: 0.000000001px;
+  width: 1%;
+}
+// 添加私有前缀
+@mixin vendor($prop, $args) {
+  -webkit-#{$prop}: $args;
+  -moz-#{$prop}: $args;
+  -ms-#{$prop}: $args;
+  -o-#{$prop}: $args;
+  $prop: $args;
+}
+
+@mixin transition(){
+  @include vendor('transition', arguments);
+}
+
+@mixin transform(){
+  @include vendor('transform', arguments);
+}
+
+// 不换行
+@mixin no-wrap(){
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// n行省略号
+@mixin no-wrap-plus($line-clamp: 2){
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $line-clamp;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+//  水平居中
+@mixin row-center(){
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+//垂直居中
+@mixin col-center(){
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+//  全居中
+@mixin all-center(){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//布局
+@mixin layout($direction: column, $inline: flex, $wrap: wrap){
+  display: $inline;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+// 填充盒子
+@mixin fill-box($pos: absolute){
+  position: $pos;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin border-1px($color: #ededed, $style: solid){
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px $style $color;
+  }
+}
+
+@mixin border-none(){
+  &:before{
+    display: none;
+  }
+  &:after{
+    display: none;
+  }
+}
+
+// 扩展点击区域
+@mixin extend-click($number: -20px){
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    top: $number;
+    left: $number;
+    right: $number;
+    bottom: $number;
+  }
+}

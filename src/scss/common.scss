@@ -1,0 +1,169 @@
+html {
+    font-size: 100PX;
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 86.223PX;
+        
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width:360px) {
+    html {
+        font-size: 97PX;
+        
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width:375px) {
+    html {
+        font-size: 100PX;
+        
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width:393px) {
+    html {
+        font-size: 104.8PX;
+        
+    }
+}
+
+@media screen and (min-width: 394px) and (max-width:412px) {
+    html {
+        font-size: 110.147PX;
+        
+    }
+}
+
+@media screen and (min-width: 413px) and (max-width:414px) {
+    html {
+        font-size: 110.2PX;
+        
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width:480px) {
+    html {
+        font-size: 127.768PX;
+        
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:540px) {
+    html {
+        font-size: 143.739PX;
+        
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width:640px) {
+    html {
+        font-size: 170.347PX;
+        
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width:720px) {
+    html {
+        font-size: 191.64PX;
+        
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width:768px) {
+    html {
+        font-size: 204.4PX;
+        
+    }
+}
+
+@media screen and (min-width: 769px) {
+     html {
+        font-size: 204.4PX;
+        #app {
+            width: 768PX;
+        }
+    }
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+.clearfix {
+    zoom: 1;
+  }
+input,button,select,textarea{outline:none}
+// 顶部标题top-title
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.top-title {
+    width: 100vw;
+    height: 44px;
+    background: $color-shade-main;
+    font-size: 16px;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: $color-white;
+    line-height: 44px;
+    text-align: center;
+    cursor: pointer;
+    /* position: absolute; */
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 1000;
+    background-attachment: fixed;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+.bottom-title {
+    width: 100vw;
+    height: 44px;
+    background: $color-main;
+    font-size: 16px;
+    font-family: $font-family-medium;
+    font-weight: 500;
+    color: $color-white;
+    line-height: 44px;
+    text-align: center;
+    cursor: pointer;
+    /* position: absolute; */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background-attachment: fixed;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+.top-title .fl button {
+    background: inherit;
+    color: $color-white;
+    border: none;
+    box-shadow: none;
+}
+.top-title .fc {
+    width: 295px;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.top-seat {
+    width: 100vw;
+    height: 54px;
+}
+// tou顶部导航
+.manualaudit-tips{
+    margin-top: 44px;
+}

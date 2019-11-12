@@ -1,0 +1,87 @@
+/**
+ *  优化改版规范
+ *  tips:
+ *  所有颜色命名均以用到的区域定义，这里只定义公共大类的颜色
+ *  私有颜色可以新建private.scss自定义到里面
+ */
+
+// 主色区域
+$color-main: rgba(95,101,175,1); // 主颜色
+$color-sub: #ffffff; // 副颜色
+$color-shade-main: linear-gradient(90deg,rgba(49,52,89,1) 0%,rgba(95,101,175,1) 100%); // 主渐变色
+
+// 辅助色区域
+$color-background: #f5f5f9; // 背景色
+$color-white: #ffffff;
+$color-line: #e7e7e7; // 线条颜色
+$color-line-sub: #EAEAEA; // 线条辅助颜色
+$color-sub-main: #757AB8; // 辅助颜色
+
+// 文字色区域
+$color-text-main: #1d1d2a; // 主文字色
+$color-text-sub: #555555; // 副文字色
+$color-text-assist: #999; // 辅助文字颜色
+$color-text-mains: #333; // 主文字色
+
+// 字体
+$font-family-regular: 'PingFangSC-Regular';
+$font-family-light: 'PingFangSC-Light';
+$font-family-medium: 'PingFangSC-Medium';
+$font-family-bold: 'PingFangSC-Semibold';
+
+// 字体定义规范
+$font-size-12: 12px;
+$font-size-13: 13px;
+$font-size-14: 14px;
+$font-size-15: 15px;
+$font-size-16: 16px;
+$font-size-17: 17px;
+$font-size-18: 18px;
+$font-size-19: 19px;
+$font-size-20: 20px;
+$font-size-21: 21px;
+$font-size-22: 22px;
+$font-size-24: 24px;
+$font-size-25: 25px;
+
+/*
+        quu..__
+         $$$b  `---.__
+          "$$b        `--.                          ___.---uuudP
+           `$$b           `.__.------.__     __.---'      $$$$"              .
+             "$b          -'            `-.-'            $$$"              .'|
+               ".                                       d$"             _.'  |
+                 `.   /                              ..."             .'     |
+                   `./                           ..::-'            _.'       |
+                    /                         .:::-'            .-'         .'
+                   :                          ::''\          _.'            |
+                  .' .-.             .-.           `.      .'               |
+                  : /'$$|           .@"$\           `.   .'              _.-'
+                 .'|$u$$|          |$$,$$|           |  <            _.-'
+                 | `:$$:'          :$$$$$:           `.  `.       .-'
+                 :                  `"--'             |    `-.     \
+                :##.       ==             .###.       `.      `.    `\
+                |##:                      :###:        |        >     >
+                |#'     `..'`..'          `###'        x:      /     /
+                 \                                   xXX|     /    ./
+                  \                                xXXX'|    /   ./
+                  /`-.                                  `.  /   /
+                 :    `-  ...........,                   | /  .'
+                 |         ``:::::::'       .            |<    `.
+                 |             ```          |           x| \ `.:``.
+                 |                         .'    /'   xXX|  `:`M`M':.
+                 |    |                    ;    /:' xXXX'|  -'MMMMM:'
+                 `.  .'                   :    /:'       |-'MMMM.-'
+                  |  |                   .'   /'        .'MMM.-'
+                  `'`'                   :  ,'          |MMM<
+                    |                     `'            |tbap\
+                     \                                  :MM.-'
+                      \                 |              .''
+                       \.               `.            /
+                        /     .:::::::.. :           /
+                       |     .:::::::::::`.         /
+                       |   .:::------------\       /
+                      /   .''               >::'  /
+                      `',:                 :    .'
+                                           `:.:'
+*/
